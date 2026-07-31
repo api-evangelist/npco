@@ -1,8 +1,23 @@
 aid: npco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/npco.png
 name: NPco
-description: 'NPco is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Industrial, Energy & IoT. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'NPco (NP Company) is an AI-native physics-simulation startup building AI-powered
+  simulation for aerospace, defense, and energy engineering. Backed by Partech, it positions itself
+  around accelerating physics simulation with AI. As of this enrichment pass the company publishes
+  only a marketing site (careers plus a contact@npco.ai address) with no public developer portal,
+  API, documentation, or SDKs surfaced. This profile remains a lead in the Industrial, Energy & IoT
+  sector pending any future developer/API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/npco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Industrial, Energy & Iot
+- Artificial Intelligence
+- Physics Simulation
+- Aerospace
+- Defense
+- Energy
+- Engineering
+- Simulation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/npco-domain-security.yml
 - type: Website
   url: https://www.npco.ai/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
